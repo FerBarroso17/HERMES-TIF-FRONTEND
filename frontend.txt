@@ -1,0 +1,9 @@
+desde git bash abrir en windows
+
+cd "a la carpeta que queremos que quede toso"
+
+git clone https://github.com/FerBarroso17/HERMES-TIF-FRONTEND
+
+cd HERMES-TIF-FRONTEND
+
+"YA SE PUEDE ABRIR Y CAMBIAR DE RAMAS DESDE VSC"
