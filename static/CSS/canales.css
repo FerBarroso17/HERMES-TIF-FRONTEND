@@ -1,0 +1,162 @@
+.search-button, .create-button, .user-icon {
+    background-color: transparent; 
+    padding: 0; 
+    width: auto; 
+    height: auto; 
+}
+
+
+.user-icon {
+    margin-top: 50px; 
+}    
+
+.search-button, .create-button, .user-icon {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+
+.search-icon, .create-icon, .user-icon {
+    width: 40px; 
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: auto 1fr; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f3b4b1;
+    overflow: hidden; 
+}
+
+.canales {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-image: url('../img/canalescolumna.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-right: 1px solid #202225;
+    align-items: flex-start;
+    padding-left: 10px;
+    color: rgb(230, 243, 245);
+}
+.canales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.canales ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 60px; 
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.canales ul li:hover {
+    border-radius: 6px;
+    background-color: rgb(5, 49, 85);
+}
+
+.canales ul li button {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(2, 22, 59);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; 
+    margin-top: 5px; 
+}
+
+
+.canales ul li span {
+    margin-left: 4px; 
+}
+
+.button-label {
+    color: white; 
+    font-size: 12px; 
+    margin-bottom: 12px; 
+}
+
+
+.canales .server-info {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; 
+    margin-left: 10px; 
+}
+
+.canales .server-info span {
+    margin-left: 40px; 
+}
+
+.addchannel {
+    display: none;
+    height: 300px;
+    width: 400px;
+    color: whitesmoke;
+    background-color: rgba(58, 2, 2, 0.3); 
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+.addchannelform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addchannel input {
+    width: 300px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons button {
+    margin: 0 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.buttons button:hover {
+    background-color: rgb(248, 230, 151); 
+}
+
+.main-content {
+    grid-column: 2;
+    grid-row: 2;
+    flex-grow: 1;
+    padding: 20px;
+    background-image: url('../img/canales.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+    overflow-y: auto;
+}
+

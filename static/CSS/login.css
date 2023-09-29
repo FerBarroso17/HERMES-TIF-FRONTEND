@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Zeus;
+  src: url("../Fonts/raleway-black.woff2");
+}
+
+body {
+  background: url("../img/fondologin.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Formulario {
+  background-color: #140101cc;
+  width: 850px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 21px;
+}
+
+.Formulario .Bienvenida {
+  width: 500px;
+  height: 475px;
+  background: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px 0 0 10px;
+  font-family: Zeus;
+  font-size: 25px;
+  text-shadow: 4px 6px 4px black;
+}
+
+.Formulario .Llenado {
+  width: 300px;
+  font-family: "raleway-regular", sans-serif; 
+}
+
+.Formulario .Llenado form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Formulario .Llenado form input {
+  margin: 15px 0;
+  width: 250px;
+  height: 25px;
+  border-radius: 7px;
+  padding-left: 20px;
+  border: none;
+}
+
+.Formulario .Llenado form input::placeholder {
+  color: black;
+}
+
+.Formulario .Llenado form input:hover {
+  border: 1px solid gold;
+}
+
+.Formulario .Llenado form button {
+  width: 100px;
+  height: 25px;
+  background-color: rgb(231, 208, 179);
+  border: none;
+  margin: 15px auto;
+  border-radius: 7px;
+  transition: background-color 0.3s ease; 
+}
+
+.Formulario .Llenado form button:hover {
+  background-color: gold; 
+}
+
+.Formulario .Llenado form a {
+  text-decoration: none;
+  color: rgb(248, 248, 252);
+  margin: 15px auto;
+}
+
+.Formulario .Llenado form a:hover {
+  color: gold;
+}
+
+
+
+
