@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/CSS/register.css">
+
+    <script src="../static/JS/register.js"></script>
+
+    <title>HERMES | Registro</title>
+</head>
+<body>
+    <div class="Formulario">
+        <div class="Bienvenida">
+            <h1>BIENVENIDO A HERMES</h1>
+            <h4>Explora y chatea</h4>
+            <p id="mensaje"></p>
+        </div>
+        <div class="Llenado">
+            <form action="">
+                <label for="Nombre">Nombre/s:</label>
+                <input type="text" placeholder="Nombre" id="Nombre" required>
+                
+                <label for="Apellido">Apellido/s:</label>
+                <input type="text" placeholder="Apellido" id="Apellido" required>
+                
+                <label for="Usuario">Usuario:</label>
+                <input type="text" placeholder="Usuario" id="Usuario" required>
+                
+                <label for="Fecha_Nac">Fecha de nacimiento:</label>
+                <input type="date" id="Fecha_Nac" required>
+                
+                <label for="Correo">Correo electrónico:</label>
+                <input type="text" placeholder="Correo" id="Correo" required>
+                
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" placeholder="Contraseña" id="Contraseña" required>
+                
+                <button type="submit" id="EnviarReg">Enviar</button>
+                <a href="login">¿Ya tienes una cuenta?, Ingresa aquí</a>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

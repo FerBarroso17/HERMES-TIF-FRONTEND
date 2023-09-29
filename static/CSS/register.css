@@ -1,0 +1,107 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../img/fondoregister.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.Formulario {
+  background-color: rgba(48, 1, 1, 0.4);
+  width: 850px;
+  max-width: 90%;
+  height: auto; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.Formulario .Bienvenida {
+  width: 40%; 
+  max-width: 100%; 
+  height: auto;
+  background-image: url("../img/register.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(247, 250, 249);
+  border-radius: 10px 10px 10px 10px;
+  font-family: Arial;
+  font-size: 30px;
+  text-shadow: 4px 6px 4px black;
+  padding: 30px; 
+}
+
+.Formulario .Llenado {
+  width: 60%; 
+  height: auto; 
+  margin-top: 20px;
+  padding: 20px; 
+}
+
+.Formulario .Llenado form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Formulario .Llenado form label {
+  margin: 15px 0;
+  color: white;
+}
+
+.Formulario .Llenado form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: none;
+  background-color: rgba(245, 247, 248, 0.925);
+  color: black;
+  margin: 5px 0;
+}
+
+.Formulario .Llenado form input::placeholder {
+  color: black;
+}
+
+.Formulario .Llenado form input:hover {
+  border: 1px solid gold;
+}
+
+.Formulario .Llenado form button {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(231, 208, 179);
+  border: none;
+  margin: 15px auto;
+  border-radius: 7px;
+}
+
+.Formulario .Llenado form button:hover {
+  background-color: gold;
+}
+
+.Formulario .Llenado form a {
+  text-decoration: none;
+  color: rgb(249, 253, 253);
+  margin: 15px auto;
+}
+
+.Formulario .Llenado form a:hover {
+  color: gold;
+}
+
+
