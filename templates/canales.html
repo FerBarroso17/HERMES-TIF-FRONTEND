@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/CSS/canales.css">
+    <script src="../static/JS/canales.js"></script>
+    <title>HERMES | Canales</title>
+</head>
+<body>
+    <div class="canales">
+        <ul>
+            <li>
+                <button class="search-button">
+                    <img src="../static/img/buscarcanal.png" alt="Buscar" class="search-icon">
+                </button>
+                <span class="button-label">Mensajeria</span>
+            </li>
+            <li>
+                <button id="openAddChannel" class="create-button">
+                    <img src="../static/img/crearcanal.png" alt="Crear" class="create-icon">
+                </button>
+                <span class="button-label">Crear Canal</span>
+            </li>
+        </ul>
+        <ul id="listaCanales">  
+            
+        </ul>
+        <ul>
+            <li>
+                <img src="../static/img/logueado.png" alt="Logueado" class="user-icon">
+                <span id="nombreUsuario">Usuario logueado</span>
+            </li>
+            
+            <li>
+                <span id="letreroLogueado"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        
+    </div>
+    <div class="addchannel" hidden>
+        <form id="channelForm" action="/procesar_formulario_de_canal" method="POST">
+            <h3>CREA TU CANAL</h3>
+            <input type="text" name="channelName" id="channelName" placeholder="Nombre" required>
+            <input type="text" name="channelDescription" id="channelDescription" placeholder="Descripción" required>
+
+            <div class="buttons">
+                <button id="closeAddChannel" type="button">CERRAR</button>
+                <button id="submitChannel" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

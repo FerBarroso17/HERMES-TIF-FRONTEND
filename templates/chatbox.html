@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/CSS/chatbox.css">
+    <script src="../static/JS/chatbox.js"></script>
+    <title>HERMES | Chatbox</title>
+</head>
+<body>
+    <div class="servidores">
+        <ul>
+            <li>
+                <button class="search-button">
+                    <img src="../static/img/buscar.png" alt="Buscar" class="search-icon">
+                </button>
+                <span class="button-label">Buscar Servidor</span>
+            </li>
+            <li>
+                <button id="openAddServer" class="create-button">
+                    <img src="../static/img/crear.png" alt="Crear" class="create-icon">
+                </button>
+                <span class="button-label">Crear Servidor</span>
+            </li>
+        </ul>
+        <ul id="listaServidores">  
+        </ul>
+        <ul>
+            <li>
+                <button id="openUserProfile" class="user-button" data-user-id="{{ usuario_id }}">
+                    <img src="../static/img/logueado.png" alt="Logueado" class="user-icon">
+                </button>                
+                <span id="nombreUsuario">Usuario logueado</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        
+    </div>
+    <div class="addserver" hidden>
+        <form id="serverForm" action="/procesar_formulario" method="POST">
+            <h3>CREA TU SERVIDOR</h3>
+            <input type="text" name="serverName" id="serverName" placeholder="Nombre" required>
+            <input type="text" name="serverDescription" id="serverDescription" placeholder="Descripcion" required>
+            
+            
+            <input type="file" id="Imagen" name="imagen" accept="image/*">
+            
+            <div class="buttons">
+                <button id="closeAddServer" type="button">CERRAR</button>
+                <button id="submitServer" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+    <div class="user-popup" style="display: none;">
+        <h3>Editar Perfil de Usuario</h3>
+        <form action="">
+            <label for="Nombre">Nombre/s:</label>
+            <input type="text" placeholder="Nombre" id="Nombre" required>
+                
+            <label for="Apellido">Apellido/s:</label>
+            <input type="text" placeholder="Apellido" id="Apellido" required>
+                
+            <label for="Usuario">Usuario:</label>
+            <input type="text" placeholder="Usuario" id="Usuario" required>
+                
+            <label for="Fecha_Nac">Fecha de nacimiento:</label>
+            <input type="date" id="Fecha_Nac" required>
+                
+            <label for="Correo">Correo electrónico:</label>
+            <input type="text" placeholder="Correo" id="Correo" required>
+                
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" placeholder="Contraseña" id="Contraseña" required>
+        </form>
+        <div class="buttons">
+            <button id="closeUserProfile" type="button">CANCELAR</button>
+            <button  type="submit">ENVIAR</button>
+        </div>
+    </div>
+</body>
+</html> 
+
+
+
